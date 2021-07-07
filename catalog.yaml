@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my_bot
+  description: This bot does things!
+  annotations:
+    github.com/project-slug: 'liatrio/my_bot'
+  tags:
+    - node
+    - javascript
+    - bolt
+spec:
+  type: service
+  lifecycle: production
+  owner: liatrio
+  system: my_bot

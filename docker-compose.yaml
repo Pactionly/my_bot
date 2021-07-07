@@ -1,0 +1,11 @@
+version: "2.2"
+services:
+  my_bot:
+    container_name: my_bot
+    entrypoint: npm start
+    ports:
+      - 3000:3000
+    build: .
+    environment:
+      - BOT_USER_OAUTH_ACCESS_TOKEN
+      - APP_TOKEN
